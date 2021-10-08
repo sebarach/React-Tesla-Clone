@@ -1,8 +1,11 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Styled from 'styled-components'
 import MenuIcon from '@material-ui/icons/Menu';
+import CloseIcon from '@material-ui/icons/Close';
+
 
 function Header() {
+    const[butgerStatus,setBurgerStatus] = useState(false);
     return (
         <Container>
             <a>
@@ -16,11 +19,15 @@ function Header() {
             </Menu>
             <RigthMenu>
             <a href='#'>Shop</a>
-            <a href='#'>Account</a>
+            <a href='#'>Tesla Account</a>
             </RigthMenu>
-            <CustomMenu/>
+            <CustomMenu onClick={()=>setBurgerStatus(true)} />
 
-            <BurgerMenu>
+            <BurgerMenu show={butgerStatus}>
+                <CloseWrapper>
+                    <CloseButton onClick={()=>setBurgerStatus(false)}/>
+                </CloseWrapper>
+               
                 <li><a href='#'>Model 3</a></li>
                 <li><a href='#'>Model X</a></li>
                 <li><a href='#'>Model Y</a></li>
@@ -48,6 +55,17 @@ padding:20px;
 display:flex;
 flex-direction:column;
 text-align:start;
+transition:transform 0.2s;
+transform:${props =>props.show ?'translateX(0)' : 'translateX(100%)'};
+li{
+    padding: 15px o;
+    border-bottom:1px solid rgba(0,0,0,.2);
+    margin:20px 0;
+    a{
+        font-weight:700;
+        font-size:25px;
+    }
+}
 `
 
 const Container = Styled.div`
@@ -88,4 +106,13 @@ a{
 const CustomMenu =Styled(MenuIcon)`
 cursor:pointer;
 margin-top:15px;
+`
+
+const CloseButton = Styled(CloseIcon)`
+    cursor:pointer;
+`
+
+const CloseWrapper = Styled.div`
+display:flex;
+justify-content:flex-end;
 `
