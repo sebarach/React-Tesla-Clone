@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/React-Tesla-Clone/static/css/main.f972b66c.chunk.css",
-    "main.js": "/React-Tesla-Clone/static/js/main.1045aeab.chunk.js",
-    "main.js.map": "/React-Tesla-Clone/static/js/main.1045aeab.chunk.js.map",
+    "main.js": "/React-Tesla-Clone/static/js/main.b94e8fa9.chunk.js",
+    "main.js.map": "/React-Tesla-Clone/static/js/main.b94e8fa9.chunk.js.map",
     "runtime-main.js": "/React-Tesla-Clone/static/js/runtime-main.71a7db10.js",
     "runtime-main.js.map": "/React-Tesla-Clone/static/js/runtime-main.71a7db10.js.map",
-    "static/js/2.76c60fee.chunk.js": "/React-Tesla-Clone/static/js/2.76c60fee.chunk.js",
-    "static/js/2.76c60fee.chunk.js.map": "/React-Tesla-Clone/static/js/2.76c60fee.chunk.js.map",
+    "static/js/2.50ec6060.chunk.js": "/React-Tesla-Clone/static/js/2.50ec6060.chunk.js",
+    "static/js/2.50ec6060.chunk.js.map": "/React-Tesla-Clone/static/js/2.50ec6060.chunk.js.map",
     "index.html": "/React-Tesla-Clone/index.html",
     "static/css/main.f972b66c.chunk.css.map": "/React-Tesla-Clone/static/css/main.f972b66c.chunk.css.map",
-    "static/js/2.76c60fee.chunk.js.LICENSE.txt": "/React-Tesla-Clone/static/js/2.76c60fee.chunk.js.LICENSE.txt"
+    "static/js/2.50ec6060.chunk.js.LICENSE.txt": "/React-Tesla-Clone/static/js/2.50ec6060.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.71a7db10.js",
-    "static/js/2.76c60fee.chunk.js",
+    "static/js/2.50ec6060.chunk.js",
     "static/css/main.f972b66c.chunk.css",
-    "static/js/main.1045aeab.chunk.js"
+    "static/js/main.b94e8fa9.chunk.js"
   ]
 }
