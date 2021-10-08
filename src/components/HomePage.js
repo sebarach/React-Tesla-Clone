@@ -5,7 +5,7 @@ import Path from '../config.json'
 
 
 function HomePage() {
-    const Ruta = Path.pathUrlLocal;
+    const Ruta = Path.pathUrlProd;
     return (
         <Container>
             <Section

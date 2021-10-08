@@ -4,7 +4,6 @@ import Fade from 'react-reveal/Fade';
 
 
 function Section(props) {
-    console.log(props);
     return (
         <Wrap bgImage={props.backgroundImage} bgRuta={props.ruta}>
             <Fade bottom>            
