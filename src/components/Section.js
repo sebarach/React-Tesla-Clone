@@ -1,9 +1,10 @@
 import React from 'react'
 import Styled from "styled-components"
 import Fade from 'react-reveal/Fade';
-
+import Path from '../config.json'
 
 function Section(props) {
+    const Ruta = Path.pathUrlProd;
     return (
         <Wrap bgImage={props.backgroundImage} bgRuta={props.ruta}>
             <Fade bottom>            
@@ -26,7 +27,7 @@ function Section(props) {
 
                     </ButtonGroup>
                 </Fade>
-                <DownArrow src='/images/down-arrow.svg'/>
+                <DownArrow src={Ruta +'/images/down-arrow.svg'}/>
             </Buttons>
         </Wrap> 
         
