@@ -1,0 +1,15 @@
+--crea un componente rapido
+
+rfce
+
+
+--ctrl + /
+
+comentar react
+
+
+--styled components 
+--libreria para darle estilos a los componentes de react ```
+
+yarn add styled-components
+yarn add sweetalert2
