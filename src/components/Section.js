@@ -2,10 +2,11 @@ import React from 'react'
 import Styled from "styled-components"
 import Fade from 'react-reveal/Fade';
 
+
 function Section(props) {
-    console.log(props)
+    console.log(props);
     return (
-        <Wrap bgImage={props.backgroundImage}>
+        <Wrap bgImage={props.backgroundImage} bgRuta={props.ruta}>
             <Fade bottom>            
                <ItemText>
                 <h1>{props.title}</h1>
@@ -41,7 +42,7 @@ height:100vh;
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
-background-image:${props =>`url("/images/${props.bgImage}")`};
+background-image:${props =>`url("${props.bgRuta}/images/${props.bgImage}")`};
 display:flex;
 flex-direction:column;
 justify-content:space-between;
@@ -51,7 +52,6 @@ align-items:center;
 const ItemText = Styled.div`
 padding-top:15vh;
 text-align:center;
-
 `
 
 const ButtonGroup = Styled.div`
